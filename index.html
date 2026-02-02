@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كافيه Mando</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>    
+      
+
+<body>
+    <header>
+        <h1>مرحباً بكم في كافيه Mando</h1>
+        <p>أفضل مكان للقهوة والأطعمة الشهية</p>
+    </header>
+
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#menu">القائمة</a>
+        <a href="#cart">السلة</a>
+        <a href="#about">عن الكافيه</a>
+        <a href="#contact">اتصل بنا</a>
+    </nav>
+
+    <section id="home">
+        <h2>الرئيسية</h2>
+        <p>استمتع بأجواء مريحة ومشروباتنا الفريدة. نحن نقدم أفضل الخدمات لعملائنا.</p>
+    </section>
+
+    <section id="menu">
+        <h2>القائمة</h2>
+        <h3>المشروبات</h3>
+        <div id="drinks">
+            <div class="menu-item" data-name=" قهوة تركي" data-price="25">
+                <span>قهوة تركي</span>
+                <span>25 جنيه</span>
+                <button class="add-to-cart">أضف إلى السلة</button>
+            </div>
+            <div class="menu-item" data-name="شاي " data-price="5">
+                <span>شاي</span>
+                <span>5 جنيه</span>
+                <button class="add-to-cart">أضف إلى السلة</button>
+            </div>
+            <div class="menu-item" data-name="ناسكافيه " data-price="15">
+                <span>ناسكافيه</span>
+                <span>15 جنيه</span>
+                <button class="add-to-cart">أضف إلى السلة</button>
+            </div>
+            <div class="menu-item" data-name="سحلب " data-price="15">
+                <span>سحلب</span>
+                <span>15 جنيه</span>
+                <button class="add-to-cart">أضف إلى السلة</button>
+            </div>
+            <!-- أضف المزيد هنا -->
+        </div>
+
+        <h3>الأكل</h3>
+        <div id="food">
+            <div class="menu-item" data-name="ساندويتش شاورما" data-price="20">
+                <span>ساندويتش شاورما</span>
+                <span>20 جنيه</span>
+                <button class="add-to-cart">أضف إلى السلة</button>
+            </div>
+            <div class="menu-item" data-name="ساندويتش بانيه" data-price="20">
+                <span>ساندويتش بانيه</span>
+                <span>20 جنيه</span>
+                <button class="add-to-cart">أضف إلى السلة</button>
+            </div>
+            <div class="menu-item" data-name="همبرجر " data-price="35">
+                <span>همبرجر</span>
+                <span>35 جنيه</span>
+                <button class="add-to-cart">أضف إلى السلة</button>
+            </div>
+            <!-- أضف المزيد هنا -->
+        </div>
+    </section>
+
+    <section id="cart" class="cart">
+        <h2>سلة التسوق</h2>
+        <div id="cart-items"></div>
+        <p>الإجمالي: <span id="total">0</span> جنيه</p>
+        <button id="checkout">اطلب الآن</button>
+    </section>
+
+    <section id="about">
+        <h2>عن الكافيه</h2>
+        <p>كافيه Mando هو مكان يجمع بين الطعام الشهي والأجواء الدافئة. تأسس في 2023 ونحن ملتزمون بتقديم أفضل
+            الخدمات.</p>
+    </section>
+
+    <section id="contact">
+        <h2> contact Us</h2>
+        <p>Phone 01004561691</p>
+        <p> az082790@gmail.com</p>
+        <p> location: Minia - Matay </p> 
+        <form>
+            <label for="name">الاسم:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="message">الرسالة:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 كافيه Mando. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    
+</body>
+
+</html>

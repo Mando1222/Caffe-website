@@ -1,0 +1,100 @@
+  body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+  }
+
+  header {
+      background-color: #8B4513;
+      color: white;
+      padding: 20px;
+      text-align: center;
+  }
+
+  nav {
+      background-color: #A0522D;
+      padding: 10px;
+      text-align: center;
+  }
+
+  nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+  }
+
+  nav a:hover {
+      text-decoration:underline;
+  }
+
+  section {
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0;
+      padding: 10px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .add-to-cart {
+      background-color: #8B4513;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 3px;
+  }
+
+  .cart {
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+  }
+
+  .cart-item {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+  }
+
+  .remove {
+      color: red;
+      cursor: pointer;
+  }
+
+  #contact{
+    margin-bottom: 100px;
+  }
+  footer {
+      background-color: #8B4513;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+  }
+
+  @media (max-width: 768px) {
+      .menu-item {
+          flex-direction: column;
+      }
+  }
+  button {
+      display: block;
+      cursor: pointer;
+      z-index: 10;
+  }
