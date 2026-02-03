@@ -95,13 +95,16 @@
         <p>Phone 01004561691</p>
         <p> az082790@gmail.com</p>
         <p> location: Minia - Matay </p> 
-        <form>
-            <label for="name">الاسم:</label><br>
-            <input type="text" id="name" name="name"><br>
-            <label for="message">الرسالة:</label><br>
-            <textarea id="message" name="message"></textarea><br>
-            <button type="submit">إرسال</button>
+        <form id="order-form">
+            <label for="name">اسم العميل:</label><br>
+            <input type="text" id="name" required><br><br>
+        
+            <label for="location">موقع العميل:</label><br>
+            <textarea id="location" required></textarea><br><br>
+        
+            <button type="submit">إرسال الطلب</button>
         </form>
+
     </section>
 
     <footer>

@@ -50,27 +50,36 @@
 
         /* طلب الآن + واتساب */
         document.getElementById("checkout").addEventListener("click", () => {
-            if (cart.length === 0) {
-                alert("❌ السلة فاضية");
-                return;
-            }
+    if (cart.length === 0) {
+        alert("❌ السلة فاضية");
+        return;
+    }
 
-            let message = "🛒 طلب جديد من الكافيه:%0A";
-            cart.forEach(item => {
-                message += `- ${item.name} (${item.price} جنيه)%0A`;
-            });
-            message += `%0Aالإجمالي: ${total} جنيه`;
+    const name = document.getElementById("name").value.trim();
+    const location = document.getElementById("location").value.trim();
 
-            // غير الرقم لرقمك
-            let phone = "201004561691";
-            let url = `https://wa.me/${phone}?text=${message}`;
+    if (!name || !location) {
+        alert("❗ من فضلك اكتب اسمك وموقعك");
+        return;
+    }
 
-            window.open(url, "_blank");
+    let message = `🛒 *طلب جديد من كافيه Mando*%0A%0A`;
+    message += `👤 *اسم العميل:* ${name}%0A`;
+    message += `📍 *الموقع:* ${location}%0A%0A`;
+    message += `📦 *الطلب:*%0A`;
 
-            cart = [];
-            saveCart();
-            renderCart();
-        });
+    cart.forEach(item => {
+        message += `- ${item.name} (${item.price} جنيه)%0A`;
+    });
 
-        /* تحميل السلة عند فتح الصفحة */
-        renderCart();
+    message += `%0A💰 *الإجمالي:* ${total} جنيه`;
+
+    let phone = "201004561691";
+    let url = `https://wa.me/${phone}?text=${message}`;
+
+    window.open(url, "_blank");
+
+    cart = [];
+    saveCart();
+    renderCart();
+});
